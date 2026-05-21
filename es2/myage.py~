@@ -1,0 +1,16 @@
+def myage(d,m,y):
+    età_y=2026-y
+    età_d=età_y*365
+    età_s=età_d*24*3600
+    return età_y,età_d,età_s
+
+day=int(input('giorno di nascita: '))
+month=int(input('mese di nascita: '))
+yr=int(input('anno di nascita: '))
+
+anni,giorni,secondi=myage(30,5,2004)
+
+print('hai ',anni,' anni')
+print('hai ',giorni,' giorni')
+print('hai 'secondi,' secondi')
+

@@ -1,0 +1,7 @@
+s1=0
+for i in range(0,101):
+    s1=s1+i
+print(s1)
+print(int(100*101/2))
+
+
