@@ -1,0 +1,10 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from reco import hit
+
+def read_csv(a):
+    pd.read_csv(a)
+
+mod0=read_csv('mod0.csv')
+print(mod0.columns)

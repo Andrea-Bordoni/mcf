@@ -1,0 +1,23 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+class hit:
+
+    def __init__(self,a,b,c):
+        self.mod=a
+        self.sens=b
+        self.time=c
+
+    def inserisci_modulo(self):
+        n=int(input('inserisci 0,1,2 o 3: '))
+        while(n!=0 and n!=1 and n!=2 and n!=3 ):
+              n=int(input('inserisci 0,1,2 o 3: '))
+        self.mod=n
+    def inserisci_sensore(self):
+        n=int(input('inserisci 0,1,2,3 o 4: '))
+        while(n!=0 and n!=1 and n!=2 and n!=3 and n!=4):
+             n=int(input('inserisci 0,1,2,3 o 4: '))
+        self.sens=n
+    def set_hit_time(self, time_list):
+        self.time=time_list
